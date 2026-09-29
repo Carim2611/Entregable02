@@ -186,6 +186,7 @@
     <Compile Include="Controllers\CinestarController.cs" />
     <None Include="packages.config" />
     <Content Include="Views\Cinestar.Master" />
+    <None Include="Properties\PublishProfiles\cnCinestar - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

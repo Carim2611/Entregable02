@@ -126,6 +126,7 @@
     <Content Include="Contents\img\varios\ico-twitter.png" />
     <Content Include="Contents\img\varios\logo-cinestar.png" />
     <Content Include="Contents\img\varios\starcard.jpg" />
+    <Content Include="Link a Azure.txt" />
     <Content Include="Views\cine.aspx" />
     <Content Include="Views\cines.aspx" />
     <Content Include="Views\index.aspx" />

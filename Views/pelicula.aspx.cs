@@ -9,11 +9,11 @@ namespace webCineStar_WebForms_202620.Views
             string id = Request.QueryString["id"];
             if (id == null) Response.Redirect("index.aspx");
 
-            rptPelicula.DataSource = new Controllers.CinestarController().getPelicula(id);
-            rptPelicula.DataBind();
-
-            if (rptPelicula.DataSource == null)
+            if (fvPelicula.DataSource == null)
                 Response.Redirect("index.aspx");
+
+            fvPelicula.DataSource = new Controllers.CinestarController().getPelicula(id);
+            fvPelicula.DataBind();
         }
     }
 }

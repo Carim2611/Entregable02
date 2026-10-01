@@ -15,13 +15,13 @@ namespace webCineStar_WebForms_202620.Views
     {
 
         /// <summary>
-        /// Control rptCine.
+        /// Control fvCine.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptCine;
+        protected global::System.Web.UI.WebControls.FormView fvCine;
 
         /// <summary>
         /// Control rptCineTarifas.

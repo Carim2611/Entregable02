@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <br/><h1>Cartelera</h1><br/>
-	<asp:Repeater ID="rptPelicula" runat="server">
+	<asp:FormView ID="fvPelicula" runat="server">
 		<ItemTemplate>
 			<div class="contenido-pelicula">
 				<div class="datos-pelicula">
@@ -39,5 +39,5 @@
 				<embed src="https://www.youtube.com/v/<%#Eval("Link")%>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="580" height="400">
 			</div>
 		</ItemTemplate>
-	</asp:Repeater>
+	</asp:FormView>
 </asp:Content>

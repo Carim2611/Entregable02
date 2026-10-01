@@ -12,7 +12,7 @@
                     <span><%#Eval("Direccion")%> - <%#Eval("Detalle")%><br/><br/>Teléfono: <%#Eval("Telefonos")%></span>
                 </div>
                 <br/>
-                <a href="cine.aspx?id=<%#Eval("id")%>">
+                <a href="cine.aspx?idCine=<%#Eval("id")%>">
                     <img src="../Contents/img/varios/ico-info2.png" width="150" height="40"/>
                 </a>
             </div>

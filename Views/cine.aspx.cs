@@ -1,5 +1,4 @@
 ﻿using System;
-using webCineStar_WebForms_202620.Controllers;
 
 namespace webCineStar_WebForms_202620.Views
 {
@@ -7,19 +6,19 @@ namespace webCineStar_WebForms_202620.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string id = Request.QueryString["id"];
-            if (id == null) Response.Redirect("index.aspx");
+            int id;
+            string idCine = Request.QueryString["idCine"];
+            if (idCine != null && int.TryParse(idCine, out id))
+            {
+                fvCine.DataSource = new Controllers.CinestarController().getCine(idCine);
+                if (fvCine.DataSource == null)
+                    Response.Redirect("index.aspx");
 
-            CinestarController controller = new CinestarController();
-
-            imgCine.ImageUrl = "~/Contents/img/cine/" + id + ".2.jpg";
-
-            rptCine.DataSource = controller.getCine(id);
-            rptCine.DataBind();
-            rptCineTarifas.DataSource = controller.getCineTarifas(id);
-            rptCineTarifas.DataBind();
-            rptCinePeliculas.DataSource = controller.getCinePeliculas(id);
-            rptCinePeliculas.DataBind();
+                imgCine.ImageUrl = "~/Contents/img/cine/" + id + ".2.jpg";
+                rptCineTarifas.DataSource = new Controllers.CinestarController().getCineTarifas(idCine);
+                rptCinePeliculas.DataSource = new Controllers.CinestarController().getCinePeliculas(idCine);
+                DataBind();
+            }
         }
     }
 }

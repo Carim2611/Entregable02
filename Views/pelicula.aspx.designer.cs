@@ -15,12 +15,12 @@ namespace webCineStar_WebForms_202620.Views
     {
 
         /// <summary>
-        /// Control rptPelicula.
+        /// Control fvPelicula.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptPelicula;
+        protected global::System.Web.UI.WebControls.FormView fvPelicula;
     }
 }
